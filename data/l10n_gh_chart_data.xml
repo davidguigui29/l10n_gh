@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Reports menu section for Ghana (like l10n_uk) -->
+    <menuitem
+        id="account_reports_gh_statements_menu"
+        name="Ghana"
+        parent="account.menu_finance_reports"
+        sequence="6"
+        groups="account.group_account_readonly"
+    />
+</odoo>

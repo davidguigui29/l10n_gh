@@ -1,0 +1,58 @@
+"id","description","invoice_label","type_tax_use","tax_scope","name","amount_type","amount","tax_group_id","active","repartition_line_ids/repartition_type","repartition_line_ids/document_type","repartition_line_ids/tag_ids","repartition_line_ids/account_id","repartition_line_ids/factor_percent"
+"ST20","","VAT 20%","sale","","VAT 20% (Effective)","percent","20.0","gh_vat_levies","True","base","invoice","+6","",""
+"","","","","","","","","","","tax","invoice","+1","220100",""
+"","","","","","","","","","","base","refund","-6","",""
+"","","","","","","","","","","tax","refund","-1","220100",""
+
+"PT20","","VAT 20%","purchase","consu","VAT 20%","percent","20.0","gh_vat_levies","True","base","invoice","+7","",""
+"","","","","","","","","","","tax","invoice","+4","130100",""
+"","","","","","","","","","","base","refund","-7","",""
+"","","","","","","","","","","tax","refund","-4","130100",""
+
+
+"ST15","","VAT 15%","sale","","VAT 15% (Sales)","percent","15.0","gh_vat_levies","True","base","invoice","+6","",""
+"","","","","","","","","","","tax","invoice","+1","220100",""
+"","","","","","","","","","","base","refund","-6","",""
+"","","","","","","","","","","tax","refund","-1","220100",""
+
+"STNHIL2_5","","NHIL 2.5%","sale","","NHIL 2.5% (Sales)","percent","2.5","gh_vat_levies","True","base","invoice","+6","",""
+"","","","","","","","","","","tax","invoice","+1","220100",""
+"","","","","","","","","","","base","refund","-6","",""
+"","","","","","","","","","","tax","refund","-1","220100",""
+
+"STGET2_5","","GETFund 2.5%","sale","","GETFund 2.5% (Sales)","percent","2.5","gh_vat_levies","True","base","invoice","+6","",""
+"","","","","","","","","","","tax","invoice","+1","220100",""
+"","","","","","","","","","","base","refund","-6","",""
+"","","","","","","","","","","tax","refund","-1","220100",""
+
+
+"PT15","","VAT 15%","purchase","consu","VAT 15% (Purchases)","percent","15.0","gh_vat_levies","True","base","invoice","+7","",""
+"","","","","","","","","","","tax","invoice","+4","130100",""
+"","","","","","","","","","","base","refund","-7","",""
+"","","","","","","","","","","tax","refund","-4","130100",""
+
+"PTNHIL2_5","","NHIL 2.5%","purchase","consu","NHIL 2.5% (Purchases)","percent","2.5","gh_vat_levies","True","base","invoice","+7","",""
+"","","","","","","","","","","tax","invoice","+4","130100",""
+"","","","","","","","","","","base","refund","-7","",""
+"","","","","","","","","","","tax","refund","-4","130100",""
+
+"PTGET2_5","","GETFund 2.5%","purchase","consu","GETFund 2.5% (Purchases)","percent","2.5","gh_vat_levies","True","base","invoice","+7","",""
+"","","","","","","","","","","tax","invoice","+4","130100",""
+"","","","","","","","","","","base","refund","-7","",""
+"","","","","","","","","","","tax","refund","-4","130100",""
+
+
+"ST0","Zero Rated Sales","0%","sale","","0% (Zero Rated)","percent","0.0","gh_vat_0","True","base","invoice","+6","",""
+"","","","","","","","","","","tax","invoice","","",""
+"","","","","","","","","","","base","refund","-6","",""
+"","","","","","","","","","","tax","refund","","",""
+
+"STEX","Exempt Sales","Exempt","sale","","Exempt (Sales)","percent","0.0","gh_vat_0","True","base","invoice","+6","",""
+"","","","","","","","","","","tax","invoice","","",""
+"","","","","","","","","","","base","refund","-6","",""
+"","","","","","","","","","","tax","refund","","",""
+
+"PTEX","Exempt Purchases","Exempt","purchase","consu","Exempt (Purchases)","percent","0.0","gh_vat_0","True","base","invoice","+7","",""
+"","","","","","","","","","","tax","invoice","","",""
+"","","","","","","","","","","base","refund","-7","",""
+"","","","","","","","","","","tax","refund","","",""

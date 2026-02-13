@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Demo company partner -->
+    <record id="base_partner_demo_company_gh" model="res.partner" forcecreate="1">
+        <field name="name">Ghana Company</field>
+        <field name="vat"/>
+        <field name="street"/>
+        <field name="city">Accra</field>
+        <field name="country_id" ref="base.gh"/>
+        <field name="zip"/>
+        <field name="phone">+233 30 000 0000</field>
+        <field name="email">info@company.ghexample.com</field>
+        <field name="website">www.ghexample.com</field>
+        <field name="is_company" eval="True"/>
+    </record>
+
+    <!-- Demo company -->
+    <record id="base_demo_company_gh" model="res.company" forcecreate="1">
+        <field name="name">Ghana Company</field>
+        <field name="partner_id" ref="base_partner_demo_company_gh"/>
+    </record>
+
+    <!-- Demo bank account -->
+    <record id="base_demo_bank_gh" model="res.partner.bank" forcecreate="1">
+        <field name="acc_number">GH12GCBG000000000000000000</field>
+        <field name="partner_id" ref="base_partner_demo_company_gh"/>
+        <field name="company_id" ref="base_demo_company_gh"/>
+    </record>
+
+    <!-- Trigger country onchange to set chart template fields / fiscal country -->
+    <function model="res.company" name="_onchange_country_id">
+        <value eval="[ref('base_demo_company_gh')]"/>
+    </function>
+
+    <!-- Add demo company to main demo users -->
+    <function model="res.users" name="write">
+        <value eval="[ref('base.user_root'), ref('base.user_admin'), ref('base.user_demo')]"/>
+        <value eval="{'company_ids': [(4, ref('base_demo_company_gh'))]}"/>
+    </function>
+
+    <!-- Load Ghana chart for the demo company -->
+    <function model="account.chart.template" name="try_loading">
+        <value eval="[]"/>
+        <value>gh</value>
+        <value model="res.company" eval="obj().env.ref('base_demo_company_gh')"/>
+        <value name="install_demo" eval="True"/>
+    </function>
+</odoo>

@@ -1,0 +1,3 @@
+"id","name","country_id","tax_payable_account_id","tax_receivable_account_id"
+"gh_vat_levies","VAT / Levies (Ghana)","base.gh","gh_220100","gh_130100"
+"gh_vat_0","VAT 0% / Exempt (Ghana)","base.gh","",""

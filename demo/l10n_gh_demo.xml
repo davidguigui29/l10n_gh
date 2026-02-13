@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="guidasworld_demo_partner" model="res.partner">
+            <field name="name">Guidasworld Ghana Ltd</field>
+            <field name="is_company">1</field>
+            <field name="street">Ring Road Central</field>
+            <field name="zip">GA-000-0000</field>
+            <field name="city">Accra</field>
+            <field name="country_id" ref="base.gh"/>
+            <field name="phone">+233 30 000 0000</field>
+            <field name="website">https://guidasworld.com</field>
+            <field name="email">info@gh-demo.example.com</field>
+        </record>
+
+        <record id="guidasworld_demo_contact_1" model="res.partner">
+            <field name="name">Demo Accountant</field>
+            <field name="parent_id" ref="guidasworld_demo_partner"/>
+            <field name="email">accountant@gh-demo.example.com</field>
+            <field name="active">1</field>
+            <field name="type">contact</field>
+            <field name="street">Airport Residential Area</field>
+            <field name="zip">GA-000-0001</field>
+            <field name="city">Accra</field>
+            <field name="country_id" ref="base.gh"/>
+        </record>
+
+    </data>
+</odoo>
