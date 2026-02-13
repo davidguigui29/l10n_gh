@@ -7,12 +7,14 @@
     "category": "Accounting/Localizations/Account Charts",
     "summary": "Ghana chart of accounts, VAT/Levies taxes, and tax report",
     "description": """
-Ghana localisation module for Odoo Accounting with:
-==================================================
-- Base Ghana chart of accounts (SME starter)
-- VAT / Levies tax structure (effective 20% + component taxes)
+Ghana localisation module for Odoo Accounting.
+
+Includes:
+- Ghana chart of accounts (SME starter)
+- VAT / Levies tax structure
 - Ghana Tax Report (based on Odoo Generic Tax Report)
 """,
+
     "depends": [
         "account",
         "base_vat",
