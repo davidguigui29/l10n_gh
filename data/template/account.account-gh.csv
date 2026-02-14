@@ -2,6 +2,7 @@
 "gh_110000","110000","Trade Receivables","asset_receivable","True",""
 "gh_210000","210000","Trade Payables","liability_payable","True",""
 "gh_410000","410000","Sales - Goods","income","False",""
+"gh_410100","410100","Sales - Services","income","False",""
 "gh_510000","510000","Cost of Goods Sold","expense","False",""
 "gh_610000","610000","General & Admin Expenses","expense","False",""
 "gh_220100","220100","VAT / Levies Payable","liability_payable","True","True"
